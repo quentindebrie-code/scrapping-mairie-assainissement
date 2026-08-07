@@ -790,9 +790,5 @@ else:
         2. Réglez le **rayon** et cochez les cibles.
         3. Vérifiez que les **départements scannés** couvrent le cercle.
         4. Renseignez l'**opérateur** — chaque extraction est journalisée.
-
-        **Sources mobilisées** — BAN · API Découpage administratif ·
-        API Annuaire de l'administration (DILA) · API Recherche d'entreprises (DINUM).
-        Toutes gratuites, sans clé, sous licence ouverte Etalab.
         """
     )
