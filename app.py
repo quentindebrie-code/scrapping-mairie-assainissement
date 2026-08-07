@@ -786,9 +786,9 @@ else:
     st.markdown(
         """
         ### Mode d'emploi
-        1. Saisissez l'**adresse centre** (siège, dépôt, ou point de livraison prospecté).
-        2. Réglez le **rayon** et cochez les cibles.
-        3. Vérifiez que les **départements scannés** couvrent le cercle.
-        4. Renseignez l'**opérateur** — chaque extraction est journalisée.
+        1. Saisir l'**adresse centre** - 490 route de Toulouse, 81370 Saint Sulpice
+        2. Régler le **rayon** et cocher les cibles.
+        3. Vérifier que les **départements scannés** couvrent le cercle.
+        4. Renseigner l'**opérateur** — chaque extraction est journalisée.
         """
     )
