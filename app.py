@@ -764,7 +764,6 @@ if res:
             )
         st.markdown("**Journal des extractions (session courante)**")
         st.dataframe(journal, use_container_width=True, hide_index=True)
-        )
 
     with onglets[4]:
         st.markdown("**Schéma brut du premier enregistrement Annuaire**")
