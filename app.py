@@ -475,7 +475,6 @@ st.markdown(
     </style>
     <div class="hym-header">
       <h1> {APP_NAME}</h1>
-      <p>Contacts officiels des collectivités et recensement des comités des fêtes — Hympyr Énergies</p>
     </div>
     """,
     unsafe_allow_html=True,
