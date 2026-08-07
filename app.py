@@ -529,7 +529,6 @@ with st.sidebar:
         taille_lot = st.number_input("Communes par requête Annuaire", 10, 80, 40, step=5)
 
     lancer = st.button("🔎 Lancer l'extraction", type="primary", use_container_width=True)
-)
 
 # ---------------------------------------------------------------- Exécution
 if lancer:
