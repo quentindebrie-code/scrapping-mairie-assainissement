@@ -39,7 +39,7 @@ import streamlit as st
 # 1. CONFIGURATION
 # =============================================================================
 
-APP_NAME = "Radar Territorial"
+APP_NAME = "Scrapping données mairies - Deldossi Assainissement"
 APP_VERSION = "1.0"
 CONTACT_TECHNIQUE = "digital@hympyr.fr"  # ← à adapter : utilisé dans le User-Agent
 
@@ -474,8 +474,8 @@ st.markdown(
       div[data-testid="stMetricValue"] {{ font-size: 1.6rem; }}
     </style>
     <div class="hym-header">
-      <h1>📍 {APP_NAME}</h1>
-      <p>Contacts officiels des collectivités et recensement des comités des fêtes — Hympyr Énergies</p>
+      <h1>{APP_NAME}</h1>
+      <p>Contacts extraits de la base de données du Gouvernement via l'API Annuaire de l'admnistration des services publics.</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -529,12 +529,6 @@ with st.sidebar:
         taille_lot = st.number_input("Communes par requête Annuaire", 10, 80, 40, step=5)
 
     lancer = st.button("🔎 Lancer l'extraction", type="primary", use_container_width=True)
-
-st.info(
-    "**Limite structurelle assumée** — Le Répertoire National des Associations ne publie "
-    "ni email ni téléphone. Les comités des fêtes sont donc listés sans contact direct, "
-    "rattachés au contact de leur mairie, qui est le canal d'entrée réel.",
-    icon="ℹ️",
 )
 
 # ---------------------------------------------------------------- Exécution
@@ -771,10 +765,6 @@ if res:
             )
         st.markdown("**Journal des extractions (session courante)**")
         st.dataframe(journal, use_container_width=True, hide_index=True)
-        st.caption(
-            "⚠️ Le système de fichiers de Streamlit Cloud est éphémère : ce journal disparaît "
-            "au redémarrage. Pour une traçabilité opposable, exportez le classeur après chaque "
-            "extraction et archivez-le dans le dossier conformité."
         )
 
     with onglets[4]:
